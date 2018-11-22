@@ -1,0 +1,22 @@
+body { background: linear-gradient(90deg, white, #d0e2f0); }
+
+.container-fluid { padding-top: 4vh; }
+
+#ttle { padding-bottom: 2vh; font-weight: 575; text-shadow: 0.27vh 0.27vh grey; }
+
+.text { font-family: Antic; color: black; font-size: 3vw; font-weight: 550;
+text-align: center; }
+
+.quoteMessage { background-color: white; height: 65vh; width: 42vw; font-size:
+1.65vw; font-weight: 500; border-style: groove; padding-top: 13vh; left: 7%;
+border-radius: 30%; }
+
+.picture-box { background:
+url("http://dump.betacantrips.com/rita-qotd/georgian.jpg") no-repeat center;
+position: sticky; background-size: 45vw 65vh; height: 65vh; width: 45vw;
+border-radius: 49%; padding-top: 5vh; left: 5%; opacity: 90%; }
+
+.btn { font-size: 1.2vw; }
+
+#tweeet { display: flex; flex-direction: row; justify-content: center;
+#align-items: center; width: 100vw; }

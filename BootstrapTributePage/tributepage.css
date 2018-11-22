@@ -1,0 +1,38 @@
+.container-fluid {
+  margin: 30px 40px 30px 40px;
+  padding: 40px 80px 80px 40px;
+
+}
+
+body {
+    background-color: #fffaf0;
+}
+
+h1 {
+  font-size: 25vh;
+  font-family: Raleway, "News Gothic", sans-serif;
+}
+p {
+  font-size: 5vh;
+}
+
+
+img {
+  border-radius: 60%;
+}
+
+.info-link {
+  font-weight: bold;
+}
+
+.awesome {
+  font-size: 125%;
+  font-family: Raleway, "News Gothic";
+}
+
+button {
+  font-size: 80% !important;
+}
+.fav {
+  font-weight: 300;
+}

@@ -1,0 +1,68 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Orbitron|Monoton|Julius+Sans+One" rel="stylesheet">
+  <script src="simon.js" type="text/javascript" async></script>
+<link href="simon.css" rel="stylesheet">
+
+</head>
+
+<body>
+<audio id="clip1"> <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source></audio>
+<audio id="clip2"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source></audio>
+<audio id="clip3"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source></audio>
+<audio id="clip4"><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+  </audio>
+
+<div id="cellWall">
+  <div id="victoryHolder">
+    <div id="victory"></div>
+  </div>
+  <div id="cellMembrane">
+
+    <div id="row1">
+      <button class="nucleus" id="green" value="1"></button>
+      <button class="nucleus" id="red" value="2"></button>
+    </div>
+
+    <div id="momOverlap">
+      <div id="overlap">
+
+        <div id="signHolder">
+          <div id="sign">SIMON</div>
+        </div>
+
+        <div id="rowButtons">
+          <div id="countColumn" class="buttonColumn">
+            <div id="count" class="middleButtons"></div>
+            <div>COUNT</div>
+          </div>
+
+          <div id="startColumn" class="buttonColumn">
+            <div><button id="start" class="middleButtons"></button></div>
+            <div>START</div>
+          </div>
+
+          <div id="strictColumn" class="buttonColumn">
+            <button id="strict" class="middleButtons"><div id="strictOn"></div></button>
+            <div>STRICT</div>
+          </div>
+
+        </div>
+
+        <div id="powerButton">
+          <button id="off">OFF</button>
+          <button id="on">ON</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="row2">
+      <button class="nucleus" id="yellow" value="3"></button>
+      <button class="nucleus" id="blue" value="4"></button>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

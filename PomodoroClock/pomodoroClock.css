@@ -1,0 +1,115 @@
+body {
+  background-color: #4f6367;
+  text-align: center;
+  font-family: exo, sans serif;
+  color: white;
+}
+
+.sisterdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22vh;
+  font-size: 13.5vh;
+  font-family: "Montez", cursive;
+  font-weight: bold;
+  color: white;
+  padding-top: 4vh;
+}
+
+.momdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+}
+
+.boxes {
+  display: flex;
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.75vw;
+  padding-left: 1.75vw;
+  height: 15vh;
+  font-size: 3vh;
+}
+
+button {
+  border-radius: 65%;
+  background-color: #7a9e9f;
+  color: white;
+  font-weight: 500;
+  font-size: 3vh;
+  font-family: exo, sans serif;
+}
+
+#start {
+  border: inset;
+}
+
+.momdiv2 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+}
+
+#sessioncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 37vh;
+}
+
+#timercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#start {
+  font-weight: 400;
+  border-style: outset;
+}
+
+#session {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 25vw;
+  font-size: 5vh;
+}
+
+#countdown,
+#secondsCountdown {
+  height: 8vh;
+  font-size: 7vh;
+}
+
+.number {
+  font-size: 5.5vh;
+  height: 7.75vh;
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+}
+
+.modify {
+  font-size: 5vh;
+  height: 7.75vh;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
