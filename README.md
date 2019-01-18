@@ -1,6 +1,6 @@
 # projects
 
-A collection of front-end projects I completed while following the legacy freeCodeCamp curriculum using HTML, CSS, JavaScript, Bootstrap, and jQuery. Note: The freeCodeCamp curriculum was recently rebooted, and the user stories I fulfilled are different from current assignment links, but the links to the assignments give you an idea of what was required.
+A collection of front-end and back-end projects I completed while following the freeCodeCamp curriculum. The front-end projects use HTML, CSS, JavaScript, Bootstrap, and jQuery while the backend projects are built in Node.js using Express, MongoDB, Mongoose and some npm packages. Note: The freeCodeCamp curriculum was recently rebooted, and the user stories I fulfilled for the front-end projects are different from current assignment links, but the links to the assignments give you an idea of what was required.
 
 Tribute Page Project:
 My first coding project was to create a responsive tribute page using the Bootstrap, jQuery, and Animate.css libraries and fulfilling user stories as directed on freeCodeCamp. 
