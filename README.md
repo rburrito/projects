@@ -1,33 +1,11 @@
-# projects
+# Exercise Tracker REST API
 
-A collection of front-end projects I completed while following the legacy freeCodeCamp curriculum using HTML, CSS, JavaScript, Bootstrap, and jQuery. Note: The freeCodeCamp curriculum was recently rebooted, and the user stories I fulfilled are different from current assignment links, but the links to the assignments give you an idea of what was required.
+#### A microservice project, part of Free Code Camp's curriculum
 
-Tribute Page Project:
-My first coding project was to create a responsive tribute page using the Bootstrap, jQuery, and Animate.css libraries and fulfilling user stories as directed on freeCodeCamp. 
+### User Stories
 
-Assignment Link:
-https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-tribute-page
-
-
-JSON API Projects:
-These projects integrated data retrieved from JSON APIs to create the following projects using Boostrap and jQuery: random quote generator, local weather app, wikipedia viewer, and Twitch API streamer.
-
-Assignment Links:
-https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine
-https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/show-the-local-weather
-https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/build-a-wikipedia-viewer
-https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/use-the-twitch-json-api
-
-Vanilla JavaScript Projects:
-I created a responsive calculator, pomodoro clock, tic tac toe game, and Simon game using HTML, CSS Flexbox, and vanilla JavaScript. The calculator was the first project I made which used CSS Flexbox. The pomodoro clock helped me learn the concept of measuring different states. 
-
-Assignment Links:
-https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator
-https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock
-https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/build-a-tic-tac-toe-game
-https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/build-a-simon-game 
-
-
-
-
-
+1. I can create a user by posting form data username to /api/exercise/new-user and returned will be an object with username and _id.
+2. I can get an array of all users by getting api/exercise/users with the same info as when creating a user.
+3. I can add an exercise to any user by posting form data userId(_id), description, duration, and optionally date to /api/exercise/add. If no date supplied it will use current date. Returned will the the user object with also with the exercise fields added.
+4. I can retrieve a full exercise log of any user by getting /api/exercise/log with a parameter of userId(_id). Return will be the user object with added array log and count (total exercise count).
+5. I can retrieve part of the log of any user by also passing along optional parameters of from & to or limit. (Date format yyyy-mm-dd, limit = int)
