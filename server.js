@@ -5,12 +5,9 @@
 var express = require('express');
 var app = express();
 
-
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC 
 var cors = require('cors');
-
-
 app.use(cors({optionSuccessStatus: 200}));  // some legacy browsers choke on 204
 
 // http://expressjs.com/en/starter/static-files.html
@@ -34,6 +31,16 @@ var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
 
-app.get("/api/whoami", (req, res)=>{
- res.send({"ipaddress": req.ip, "language": req.headers["accept-language"], "software":req.headers["user-agent"]});
+// timestamp microservice
+app.get('/api/timestamp/:date_string?', (req,res)=>{
+  var date = new Date(req.params.date_string);
+  if (date){
+  res.json({"unix": date.getTime(), "utc":date.toUTCString()});
+    console.log(req.params.date_string);
+  } 
+  else {
+  date = new Date();
+    res.json({"unix": date.getTime(), "utc":date.toUTCString()});
+    console.log(typeof req.params.date_string);
+  }
 });
